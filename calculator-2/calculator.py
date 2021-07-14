@@ -60,7 +60,7 @@ while True:
         num2 = int(tokens[2])
         print(str(power(num1, num2)))
 
-    elif token[0] == "mod":
+    elif tokens[0] == "mod":
         #call modulo function
         num1 = int(tokens[1])
         num2 = int(tokens[2])
