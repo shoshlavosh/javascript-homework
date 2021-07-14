@@ -51,12 +51,20 @@ while True:
 
     elif tokens[0] == "cube":
         #call cube function
+        num1 = int(tokens[1])
+        print(str(cube(num1)))
 
     elif tokens[0] == "pow":
         #call power function
+        num1 = int(tokens[1])
+        num2 = int(tokens[2])
+        print(str(power(num1, num2)))
 
     elif token[0] == "mod":
         #call modulo function
+        num1 = int(tokens[1])
+        num2 = int(tokens[2])
+        print(str(mod(num1, num2)))
 
     else:
         print("That entry is not valid.\n")
