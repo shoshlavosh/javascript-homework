@@ -9,7 +9,7 @@ while True:
 #     read input
     input_string = input("Please enter an operation > ")
     # input_string = int(input_string)
-#     tokenize input
+    # tokenize input
     tokens = input_string.split(" ")
     # num1=int(tokens[1])
     # num2=0

@@ -47,6 +47,8 @@ def mod(num1, num2, num3=0, num4=0, num5=0, num6=0, num7=0, num8=0, num9=0, num1
         return 0
     temp = num1 % num2
     numlist = [num3, num4, num5, num6, num7, num8, num9, num10]
-    while i in list != 0: 
+    for i in numlist:
+        if i == 0:
+            break
         temp = temp % i
     return temp
