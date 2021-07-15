@@ -1,15 +1,12 @@
-def reorganize_produce_summary(days_list):
+def reorganize_produce_summary(day, summary):
     """Takes in a day's produce summaries and returns a /n
     more organized output"""
 
-    #loop over each day (in a list?)
-    for day in days_list:
-    
-        print()
+    print(f"Day {day}")
+    #loop over each line in the summary
+    for item in summary:
 
-        #can't figure out how to print each day # (Day #1, 2, 3) beforehand
-
-        the_file = open(day)
+        the_file = open(summary)
         #opens the file of summaries for Day 1
         for line in the_file: 
         #loops over each line in the file
@@ -27,17 +24,18 @@ def reorganize_produce_summary(days_list):
             #assigns variable "amount" to index 2 (third item) of "words"
             
 
-            print()
-            print(f"Delivered {count} {melon}s for total of ${amount}")
-            #f-string that prints out melon, count, and amount data for each line
+        print()
+        print(f"Delivered {count} {melon}s for total of ${amount}")
+        #f-string that prints out melon, count, and amount data for each line
     
 
         the_file.close()
         print()
 
 
-days_list = ["um-deliveries-20140519.txt", "um-deliveries-20140520.txt", "um-deliveries-20140521.txt"]
-reorganize_produce_summary(days_list)    
+reorganize_produce_summary("1", "um-deliveries-20140519.txt")
+reorganize_produce_summary("2", "um-deliveries-20140520.txt")
+reorganize_produce_summary("3", "um-deliveries-20140521.txt")    
 
 #solution:
 # def melon_count(day_number, path):
